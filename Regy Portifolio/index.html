@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compartible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regina Wanjiru Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/4dba6b807d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="black-background-with-defocused-glitter.png" class="logo">
+             <ul>
+                <li><a href="#">Home</a></li>
+              
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p><br>Software Engineer<br></p>
+        <hi>Hi,<span></span><br>Welcome!</hi>
+    </div>
+   </div>
+</div>
+<!--------------------------About---------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="regy.JPG">
+            </div>
+            <div class="about-col-2">
+                <hi class="sub-title">About Me</hi>
+                <p>My name is Regina Wanjiru Kariuki. I'm a passionate software engineer with experience in data science and android development.<br><br>Thanks for visiting my portfolio!</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br> Using HTML,CSS, PHP, Python and JavaScript
+                            Using frameworks such as Django and React to build reusable components
+                            The IDE used is Visual Studio</li>
+                        <li><span>Data Science</span><br>Using python for data modeling and analysis. Using libraries such as seaborn, pandas, matplotlib to model and visualize the data
+                             Using SQL to query and extract data
+                             Incorporating machine learning models algorithms such as supervised and unsupervised learning while analysis my data
+                             The IDE used is Anaconda Navigator</li>
+                        <li><span>Android Development</span><brUsing java, Flutter and Kotlin to build android apps
+                             I use Android Studio majorly with creating apps because of its easy User Interface(UI), the XML codes define a visual structure and appearance of the app></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    
+                        <li><span>2023</span><br>Intern at Murang'a County Government</li>
+               
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Bs. Software Development at KCA University</li>
+                        <li><span>2022</span><br>ALX Software Engineer</li>
+                        
+                    </ul>
+                </div>                        
+            </div>
+        </div>        
+    </div>
+</div>
+<!-----------------------Services------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Android App Design</h2>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Data Science</h2>
+                <a href="#">learn more</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!---------------------------------Portfolio--------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work 1.png" alt=" " width="450" height="300">
+                <div class="layer">
+                    <h3>Data Science Projects</h3>
+                    <p> Data Analysis</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work 2.jpg" width="200" height="300">
+                <div class="layer">
+                    <h3>Baby Care Management System</h3>
+                    <p> Using C# to create the system</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>             
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------------------contact-------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> wanjiruregina678@@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0704881713</p>
+                <div class="social-icons">
+
+                    <a href="https://github.com/regina678/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" email="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>        
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Regina Wanjiru</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</html>
